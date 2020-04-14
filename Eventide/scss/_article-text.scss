@@ -1,0 +1,90 @@
+.article_title,
+.article_pargh-medium,
+.article_pargh-small {
+  color: #828689;
+}
+.article {
+  &__title,
+  &__pargh-medium,
+  &__pargh-small {
+    color: #828689;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    max-width: 464px;
+    color: #828689;
+  }
+  &__title {
+    @include Monts-B;
+    font-size: 1.875em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    margin: 0 0 30px 0;
+  }
+  &__pargh-medium {
+    @include Ubuntu;
+    font-size: 1.375em;
+    line-height: 1.36;
+    letter-spacing: -0.11px;
+    margin: 0 0 31px 0;
+    font-weight: normal;
+  }
+  &__pargh-small {
+    @include Ubuntu;
+    font-weight: normal;
+    line-height: 1.47;
+    letter-spacing: 0.17px;
+    margin-bottom: 37px;
+  }
+  &__link {
+    @include Monts-B;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 0.17px;
+    color: #2cc7c1;
+    i {
+      letter-spacing: -0.51px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+}
+
+/*========== MEDIA ==========*/
+
+@media (max-width: 1200px) {
+  .article__text {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    &__text {
+      max-width: 100%;
+      flex: 0;
+      margin-bottom: 0;
+    }
+    &__pargh-small {
+      margin-bottom: 20px;
+    }
+    &__link{
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 414px) {
+  .article {
+    &__title{
+      font-size: 1.5em;
+    }
+    &__pargh-medium{
+      font-size: 1.2em;
+    }
+  }
+}

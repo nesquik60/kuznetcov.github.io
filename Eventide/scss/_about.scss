@@ -1,0 +1,49 @@
+$article-color: #828689;
+
+.about {
+  &__card-content {
+    display: flex;
+    padding: 0 47px 41px 20px;
+    flex-wrap: wrap;
+    color: #999999;
+  }
+  &__card-text {
+    display: flex;
+    flex: 100%;
+    padding: 31px 0 33px;
+  }
+  &__card-spans {
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+  }
+  &__card-span {
+    @include Ubuntu;
+    font-size: 1.06em;
+    line-height: 2.12;
+    letter-spacing: 0.26px;
+  }
+  &__card-img {
+    display: flex;
+    flex: 40%;
+    width: 188px;
+    height: 118px;
+  }
+}
+.fa-check-circle {
+  font-size: 1em;
+  color: #2cc7c1;
+}
+
+/*========== MEDIA ==========*/
+
+@media (max-width: 360px){
+  .about {
+    &__card-content {
+      padding: 0 10px 15px 15px;
+    }
+    &__card-spans{
+      margin-bottom: 10px;
+    }
+  }
+}

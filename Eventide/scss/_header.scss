@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(https://sun9-56.userapi.com/c857220/v857220949/7260b/bYpQlBILfH0.jpg)
+    no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    background: rgb(82, 91, 100);
+    opacity: 0.4;
+    background: linear-gradient(
+      0deg,
+      rgba(82, 91, 100, 1) 0%,
+      rgba(20, 20, 56, 1) 42%,
+      rgba(28, 53, 87, 1) 100%
+    );
+    z-index: 0;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 37px 0 40px;
+    z-index: 2;
+    h1 {
+      font-family: "Montserrat-Regular";
+      font-size: 31px;
+      line-height: 1.05;
+      letter-spacing: 0.31px;
+      margin-bottom: 31px;
+    }
+    p {
+      font-family: "Ubuntu-Regular";
+      font-size: 20px;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+      max-width: 610px;
+      margin: 0;
+    }
+  }
+  &__buttons {
+    display: flex;
+    max-width: 343px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+  }
+}
+.logo {
+  z-index: 2;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*========== MEDIA ==========*/
+@media (max-width: 1366px) {
+  .header {
+    height: 60vh;
+  }
+}
+@media (max-width: 1024px){
+  .header{
+    &__buttons{
+     align-items: center;
+     justify-content: center;
+     
+    }
+    button{
+      &:nth-child(1){
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      &__register {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 100vh;
+    &__text {
+      h1{
+      }
+    }
+  }
+}

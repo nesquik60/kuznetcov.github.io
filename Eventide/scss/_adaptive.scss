@@ -1,0 +1,17 @@
+
+@media (min-width: 769px) {
+  .card {
+    margin-left: 20px;
+  }
+  .promo {
+    &__video {
+      margin-right: 20px;
+    }
+  }
+  .event-gallery {
+    &__items {
+      margin-left: 20px;
+    }
+  }
+}
+
