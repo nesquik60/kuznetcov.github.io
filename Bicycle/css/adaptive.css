@@ -12,8 +12,8 @@
     position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     left: 0;
     top: 0;
     display: -webkit-box;
@@ -24,15 +24,13 @@
     height: 100%;
     width: 100%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #282c2b;
     margin-top: 0;
     -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
+            transform: translateY(-100%);
     -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
   }
   .header__nav a {
@@ -51,15 +49,14 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1;
+        -ms-flex-order: -1;
+            order: -1;
     margin-bottom: 40px;
     margin-top: -180px;
   }
   .header__nav.active {
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -72,21 +69,18 @@
   .header__burger.active span {
     background: #fff;
     -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
+            transform: scale(0);
   }
   .header__burger.active::after {
     background: #fff;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 0;
   }
   .header__burger.active::before {
     background: #fff;
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 0;
   }
   .header__hide-logo {
@@ -96,11 +90,11 @@
     width: 114px;
     height: 105px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 40px;
   }
   .header__hide-logo img {
@@ -115,7 +109,7 @@
   }
   .section-row {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .section-row__l-block {
     width: 100%;
@@ -135,16 +129,16 @@
   }
   .reverse {
     -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .section-col {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section-col__col-1 {
     width: 100%;
@@ -164,8 +158,8 @@
   }
   .col-block {
     -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
+        -ms-flex: none;
+            flex: none;
   }
   .section-twit {
     height: 100%;
@@ -176,9 +170,9 @@
   }
   .gallery__wrap {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     grid-auto-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
   }
@@ -273,14 +267,14 @@
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 35px;
   }
   .footer__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0;
-    flex: 0;
+        -ms-flex: 0;
+            flex: 0;
   }
   .footer__item--1 {
     margin: 35px 0;
@@ -291,11 +285,11 @@
   }
   .footer__item--2 {
     -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1;
+        -ms-flex-order: -1;
+            order: -1;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .footer__item--2:nth-child(3) {
     background: #bd081c;
