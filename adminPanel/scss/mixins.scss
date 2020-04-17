@@ -1,0 +1,18 @@
+@mixin colorGrey {
+    color: #6f7582;
+}
+@mixin border-R {
+    border-right: 2px solid #3d465e;   
+}
+@mixin border-L {
+    border-left: 2px solid #3d465e;   
+}
+@mixin border-T {
+    border-top: 2px solid #3d465e;   
+}
+@mixin border-B {
+    border-bottom: 2px solid #3d465e;   
+}
+@mixin border-all {
+    border: 2px solid #3d465e;   
+}
