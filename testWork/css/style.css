@@ -267,6 +267,10 @@ body.lock {
 }
 
 @media (min-width: 1280px) {
+  .header {
+    background-size: 100%;
+    background-position: center;
+  }
   .sity__item,
   .phone__item {
     font-size: 1.6rem;

@@ -188,6 +188,10 @@
   }
 }
 @media (min-width: 1280px) {
+  .header {
+    background-size: 100%;
+    background-position: center;
+  }
   .sity,
   .phone {
     &__item {
