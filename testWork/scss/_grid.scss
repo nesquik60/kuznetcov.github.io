@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+body.lock {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  // max-width: 304px;
+  margin: 0 auto;
+  width: 100%;
+}

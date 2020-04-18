@@ -1,0 +1,34 @@
+.programm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 800px; //временно. for-time
+
+  &__header {
+    margin-bottom: 5rem;
+  }
+
+  &__header-link {
+    @include Monts-M;
+    font-size: 1.6rem;
+    letter-spacing: 0.032rem;
+    text-align: center;
+    color: #4e93e1;
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    width: 261px;
+    height: 450px;
+    background: url('../img/kid.jpg') no-repeat;
+    background-position: 60% top;
+    background-size: 150%;
+    box-shadow: 0px 3px 10px 0 rgba(2, 2, 2, 0.2);
+    transition: all ease 1s;
+    overflow: hidden;
+    margin: 0 0.7rem;
+  }
+}

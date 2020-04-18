@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Admin Panel</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
@@ -13,9 +14,9 @@
           <div class="header__wrap">
             <div class="header__menu">
               <div class="icons">
-                <a href="" class="header__burger-icon"
-                  ><i class="fas fa-bars"></i
-                ></a>
+                <a href="" class="header__burger-icon">
+                  <i class="fas fa-bars"></i>
+                </a>
               </div>
               <a href="#" class="menu-link">Menu</a>
               <div class="cross icons">
@@ -27,7 +28,7 @@
                 <div class="search">
                   <div class="icons">
                     <a href="#" class="search__search-icon"
-                      ><i class="search-icon fas fa-search"></i
+                      ><i class="fas fa-search"></i
                     ></a>
                   </div>
                   <input
@@ -42,9 +43,7 @@
               </div>
               <div class="header__profile profile">
                 <div class="icons">
-                  <a href="#" class="profile__notice-icon"
-                    ><i class="fas fa-bell"></i
-                  ></a>
+                  <a href="#" class="profile__notice-icon"><i class="fas fa-bell"></i></a>
                 </div>
                 <div class="profile__avatar">
                   <img src="./img/Avatar.png" alt="" />
@@ -56,19 +55,94 @@
         </div>
       </header>
       <main class="main">
-        <div class="container">
+        <div class="main__wrap">
           <nav class="nav">
-            <div class="nav__item-1">
-              <a href="#">Dashboard</a>
-              <a href="#">Deals</a>
-              <a href="#">Contacts</a>
-              <a href="#">Stats</a>
-              <a href="#">Settings</a>
+            <div class="nav__item sidebar">
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"
+                    ><img src="./img/svg/dashboard.svg" alt="" class="img-svg"
+                  /></a>
+                </div>
+                <div><a href="#" class="sidebar__link">Dashboard</a></div>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-user-circle"></i></a>
+                </div>
+                <div><a href="#" class="sidebar__link">Deals</a></div>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-star"></i></a>
+                </div>
+                <div><a href="#" class="sidebar__link">Contacts</a></div>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-chart-line"></i></a>
+                </div>
+                <div><a href="#" class="sidebar__link">Stats</a></div>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-cog"></i></a>
+                </div>
+                <div><a href="#" class="sidebar__link">Settings</a></div>
+              </div>
             </div>
-            <div class="nav__item-2"></div>
-            <div class="nav__item-3"></div>
+
+            <div class="nav__item sidebar">
+              <div class="sidebar__head">
+                <a href="#" class="sidebar__heading">Last Leads</a>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-briefcase"></i></a>
+                </div>
+                <div class="sidebar__link">Bryce Canyon a stunnin...</div>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-briefcase"></i></a>
+                </div>
+                <div class="sidebar__link">What makes a hotel bou...</div>
+              </div>
+              <div class="sidebar__btn btn">
+                <button class="button-all">Show More</button>
+              </div>
+            </div>
+
+            <div class="nav__item sidebar">
+              <div class="sidebar__head">
+                <a href="#" class="sidebar__heading">Last Clients</a>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-user-alt"></i></a>
+                </div>
+                <div class="sidebar__link">Leila Estrada</div>
+              </div>
+
+              <div class="sidebar__row">
+                <div class="icons">
+                  <a href="#" class="sidebar__icon"><i class="fas fa-user-alt"></i></a>
+                </div>
+                <div class="sidebar__link">Leila Estrada</div>
+              </div>
+              <div class="sidebar__btn btn">
+                <button class="button-all">Show More</button>
+              </div>
+            </div>
           </nav>
-          <div class="main__content"></div>
+          <div class="content"><h1>hello world</h1></div>
         </div>
       </main>
     </div>
@@ -77,6 +151,6 @@
       src="https://kit.fontawesome.com/497889a7fe.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/scipt.js"></script>
+    <script src="./js/sctipt.js"></script>
   </body>
 </html>
