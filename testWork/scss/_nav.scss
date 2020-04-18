@@ -1,53 +1,188 @@
-
 .nav {
-    position: absolute;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  padding: 0 0.8rem;
+  background-color: #25262a;
+
+  transform: translateY(-100%);
+  opacity: 0.1;
+  transition: ease-in 0.3s;
+  &__line {
+    content: '';
     width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 1;
-    padding: 0 0.8rem;
-    background-color: #25262a;
-  
-    transform: translateY(-100%);
-    opacity: 0.1;
-    transition: ease-in 0.3s;
-    &__line {
-      content: '';
-      width: 100%;
-      height: 2px;
-      margin-top: 4rem;
-      background-color: #696969;
-    }
+    height: 2px;
+    margin-top: 4rem;
+    background-color: #696969;
   }
-  .nav.active{
-      transform: translateY(0);
-      opacity: 1;
+}
+.nav.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.menu,
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    @include Monts-R;
+    font-size: 1.6rem;
+    color: #fff;
   }
+}
+.menu {
+  &__item {
+    margin-top: 3.5rem;
+  }
+}
+.register {
+  margin-bottom: 2.3rem;
+  &__item {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
   .menu,
   .register {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     &__item {
-      @include Monts-R;
-      font-size: 1.6rem;
-      color: #fff;
+      font-size: 1.4rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background: none;
+    transform: none;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    &__line {
+      display: none;
     }
   }
   .menu {
+    flex-direction: row;
+    margin: 0;
     &__item {
-      margin-top: 3.5rem;
+      margin: 0 3.4rem 0 0;
+      &:nth-child(3) {
+        margin-right: 4rem;
+      }
+      &::after {
+        content: '';
+        background-color: #fe8057;
+        display: flex;
+        margin-top: 0.2rem;
+        height: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        transition: ease-in 0.2s;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
     }
   }
   .register {
-    margin-bottom: 2.3rem;
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    right: -6.3rem;
+    top: 6.3rem;
+    position: absolute;
+    width: 165px;
+    border-radius: 5px 0 5px 5px;
+    margin: 0;
+    padding: 3.4rem 0 3.4rem 3rem;
+    opacity: 0;
+
+    transform: translatex(50%) scale(0);
+    transition: ease-in 0.15s;
     &__item {
-      margin-top: 3rem;
+      color: #000;
+      text-align: left;
+      margin: 0 0 2.3rem 0;
+      position: relative;
+      &:active::after {
+        content: '';
+        position: absolute;
+        background-color: #fe8057;
+        display: flex;
+        margin-top: 0.2rem;
+        height: 2px;
+        width: 100%;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
     }
   }
+  .register.active {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .menu,
+  .register {
+    &__item {
+      font-size: 1.6rem;
+    }
+  }
+  .menu {
+    margin-right: 9.1rem;
+    &__item {
+      &:nth-child(3) {
+        margin: 0;
+      }
+    }
+  }
+  .register {
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: auto;
+    border-radius: 5px 0 5px 5px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    transform: none;
+    order: 3;
+    &__item {
+      color: #fff;
+      margin: 0 0 0 3.3rem;
+      &:nth-child(1) {
+        margin-left: 4.1rem;
+      }
+      &::after {
+        content: '';
+        background-color: #fe8057;
+        display: flex;
+        margin-top: 0.2rem;
+        height: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        transition: ease-in 0.2s;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}

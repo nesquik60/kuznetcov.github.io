@@ -49,3 +49,14 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: 992px){
+  .burger{
+    order: 3;
+  }
+}
+@media (min-width: 1280px){
+  .burger{
+    display: none;
+  }
+}

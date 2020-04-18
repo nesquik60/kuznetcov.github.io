@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="42">
+    <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2" d="M13 1c6.627 0 12 5.372 12 12v15c0 6.627-5.373 12-12 12-6.628 0-12-5.373-12-12V13C1 6.372 6.372 1 13 1z"/>
+    <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2" d="M12 9.998h2v8h-2v-8z"/>
+</svg>

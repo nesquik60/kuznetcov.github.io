@@ -7,6 +7,9 @@
 
   &__header {
     margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__header-link {
@@ -16,6 +19,16 @@
     text-align: center;
     color: #4e93e1;
   }
+  &__header-red {
+    border-radius: 30px;
+    border: solid 2px #fe8057;
+    @include orange;
+    @include Monts-M;
+    font-size: 1.8rem;
+    padding: 1.5rem 7.1rem;
+    margin-bottom: 11rem;
+    display: none;
+  }
   &__items {
     display: flex;
   }
@@ -23,12 +36,59 @@
     position: relative;
     width: 261px;
     height: 450px;
-    background: url('../img/kid.jpg') no-repeat;
-    background-position: 60% top;
-    background-size: 150%;
     box-shadow: 0px 3px 10px 0 rgba(2, 2, 2, 0.2);
     transition: all ease 1s;
     overflow: hidden;
     margin: 0 0.7rem;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    img {
+      margin-left: -28%;
+      width: 150%;
+      height: auto;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .programm {
+    &__item {
+      margin: 0 1rem;
+    }
+    &__img {
+      img {
+        width: 125%;
+        margin-left: -15%;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .programm {
+    &__item {
+      width: 304px;
+    }
+    &__header-red {
+      display: block;
+    }
+    &__img {
+      img {
+        width: 120%;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .programm {
+    &__item {
+      width: 413px;
+    }
+    &__img {
+      img {
+        width: 110%;
+        margin-left: -10%;
+      }
+    }
   }
 }

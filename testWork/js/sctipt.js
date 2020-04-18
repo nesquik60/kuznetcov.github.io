@@ -1,6 +1,10 @@
-$('.burger').click(function (e) {
-  $('.burger, .nav').toggleClass('active');
-  jQuery('body').toggleClass('lock');
+$('.burger').click(function () {
+  if ($(window).width() <= '768') {
+    jQuery('body').toggleClass('lock');
+    $('.burger, .nav, .register').toggleClass('active');
+  } else if ($(window).width() > '768') {
+    $('.burger, .register, .nav').toggleClass('active');
+  }
 });
 
 $('.programm__item').hover(
