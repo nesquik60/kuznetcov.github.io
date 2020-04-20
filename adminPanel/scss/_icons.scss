@@ -1,0 +1,24 @@
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  a {
+    @include colorGrey;
+  }
+}
+.cross {
+  margin-left: 9.5rem;
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.dashboard{
+  width: 18px;
+  height: 18px;
+}
