@@ -1,0 +1,42 @@
+.sidebar {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  @include border-T;
+  @include border-R;
+  &__head {
+    display: none;
+    margin-bottom: 2.5rem;
+  }
+  &__heading {
+    @include Roboto-M;
+    @include colorGrey;
+    font-size: 1.4rem;
+    line-height: 2.14rem;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  &__icon {
+    display: flex;
+    font-size: 1.9rem;
+  }
+  &__link {
+    display: none;
+    a {
+      @include Roboto-M;
+      @include colorLightGrey;
+      font-size: 1.3rem;
+      line-height: 1.54rem;
+      margin-left: 1.5rem;
+    }
+  }
+  &__btn {
+    display: none;
+    margin-top: 1rem;
+  }
+}

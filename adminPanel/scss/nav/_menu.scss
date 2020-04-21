@@ -1,0 +1,25 @@
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 3rem;
+  background-color: #31394c;
+  color: #fff;
+  @include border-R;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: none;
+    @include Roboto-M;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-left: 1.5rem;
+  }
+  &__burger-icon {
+    font-size: 1.8rem;
+  }
+}

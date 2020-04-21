@@ -1,0 +1,22 @@
+.button-all {
+  @include colorGrey;
+  @include Roboto-B;
+  @include btnBorderAll;
+  font-size: 1.2rem;
+  background: none;
+  padding: 1.1rem 2.6rem;
+  display: flex;
+  align-items: center;
+}
+.btn-all-border {
+  border-radius: 3rem;
+}
+
+.btn-r-border {
+  border-radius: 3rem 0 0 3rem;
+  border-right: 1.5px solid #31394c;
+}
+.btn-l-border {
+  border-radius: 0 3rem 3rem 0;
+  border-left: 1px solid #31394c;
+}

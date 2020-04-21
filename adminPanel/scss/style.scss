@@ -1,9 +1,20 @@
-@import "_fonts";
-@import "mixins";
-@import "_grid";
-@import "_header";
-@import "_icons";
-@import "_search";
-@import "_main";
-@import "_nav";
-@import "_content";
+@import './common/mixins';
+@import './common/_fonts';
+@import './common/_grid';
+@import './common/_buttons';
+@import './common/_icons';
+
+
+@import './main/_main';
+@import './main/content/_content';
+@import './main/content/_bets';
+
+@import './main/header/_header';
+@import './main/header/_profile';
+@import './main/header/_search';
+
+@import './nav/_nav';
+@import './nav/_menu';
+@import './nav/_sidebar';
+
+@import '_hide-sidebar';

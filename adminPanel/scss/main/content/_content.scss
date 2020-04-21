@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 81.25%;
+  color: #fff;
+  &__header {
+    @include border-T;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 100%;
+    padding: 2.5rem 6rem 2.5rem 3rem;
+  }
+  &__active-page {
+    display: flex;
+    align-items: center;
+    flex: calc(100% / 3);
+  }
+  &__buttons {
+    display: flex;
+    flex: calc(100% / 3);
+    margin-right: 12.7rem;
+  }
+}
+.edit-lead {
+  display: flex;
+  justify-content: flex-end;
+  flex: calc(100% / 3);
+}

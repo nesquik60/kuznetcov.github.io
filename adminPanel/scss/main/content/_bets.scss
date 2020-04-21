@@ -1,0 +1,80 @@
+.bets {
+  display: flex;
+  padding: 3rem;
+  &__item {
+  }
+
+  &__heading {
+    h3 {
+      @include Roboto-M;
+      font-size: 1.3rem;
+      line-height: 1.54;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+.diving-line {
+  width: 200px;
+  height: 2px;
+  margin: 2rem 0 1.8rem;
+  background-color: #00caff;
+}
+.person {
+  display: flex;
+  width: 200px;
+  height: 60px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: -0.2px 2px 6px 0 rgba(0, 0, 0, 0.06);
+  background-color: #31394c;
+  &__avatar {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 110%;
+      height: auto;
+    }
+  }
+  &__message {
+    display: flex;
+    span {
+      @include Roboto-M;
+      font-size: 1.2rem;
+      line-height: 1.67;
+      text-align: left;
+      color: #fff;
+    }
+  }
+
+  &__price {
+    display: flex;
+    span {
+      @include Roboto-M;
+      @include colorGrey;
+      font-size: 1.2rem;
+      line-height: 1.67;
+    }
+  }
+  .icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.history {
+  i {
+    color: #f39c13;
+  }
+}
+.arrow-right {
+  margin: 2.65rem 1rem 0;
+  a {
+    font-size: 1.6rem;
+  }
+}

@@ -9,148 +9,321 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__wrap">
-            <div class="header__menu">
-              <div class="icons">
-                <a href="" class="header__burger-icon">
-                  <i class="fas fa-bars"></i>
-                </a>
-              </div>
-              <a href="#" class="menu-link">Menu</a>
-              <div class="cross icons">
-                <img src="./img/svg/cross.svg" class="cross__icon" alt="" />
+      <nav class="nav">
+        <div class="menu">
+          <div class="menu__item">
+            <div class="icons">
+              <a href="#" class="menu__burger-icon">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+            <a href="#" class="menu__link">Menu</a>
+          </div>
+          <div class="cross icons">
+            <img src="./img/svg/cross.svg" class="cross__icon" alt="" />
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"
+                ><img src="./img/svg/dashboard.svg" alt="" class="img-svg"
+              /></a>
+            </div>
+            <div class="sidebar__link"><a href="#">Dashboard</a></div>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-user-circle"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="#">Deals</a></div>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-star"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="#">Contacts</a></div>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-chart-line"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="#">Stats</a></div>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="#">Settings</a></div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar__head">
+            <a href="#" class="sidebar__heading">Last Leads</a>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-briefcase"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="">Bryce Canyon a stunnin...</a></div>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-briefcase"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="">What makes a hotel bou...</a></div>
+          </div>
+          <div class="sidebar__btn btn">
+            <button class="button-all btn-all-border">Show More</button>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar__head">
+            <a href="#" class="sidebar__heading">Last Clients</a>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-user-alt"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="">Leila Estrada</a></div>
+          </div>
+
+          <div class="sidebar__row">
+            <div class="icons">
+              <a href="#" class="sidebar__icon"><i class="fas fa-user-alt"></i></a>
+            </div>
+            <div class="sidebar__link"><a href="#">Leila Estrada</a></div>
+          </div>
+          <div class="sidebar__btn btn">
+            <button class="button-all btn-all-border">Show More</button>
+          </div>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="main__wrap">
+          <header class="header">
+            <div class="header__wrap">
+              <div class="header__content">
+                <div class="header__search">
+                  <div class="search">
+                    <div class="icons">
+                      <a href="#" class="search__search-icon"><i class="fas fa-search"></i></a>
+                    </div>
+                    <input
+                      type="text"
+                      class="search__input"
+                      placeholder="Type in to Search..."
+                    />
+                  </div>
+                </div>
+                <div class="header__logo">
+                  <div class="logo"></div>
+                </div>
+                <div class="header__profile profile">
+                  <div class="icons">
+                    <a href="#" class="profile__notice-icon"><i class="fas fa-bell"></i></a>
+                  </div>
+                  <div class="profile__avatar">
+                    <img src="./img/Avatar.png" alt="" />
+                  </div>
+                  <div class="profile__name"><a href="#">Micheal Hogan</a></div>
+                </div>
               </div>
             </div>
-            <div class="header__content">
-              <div class="header__search">
-                <div class="search">
-                  <div class="icons">
-                    <a href="#" class="search__search-icon"
-                      ><i class="fas fa-search"></i
-                    ></a>
-                  </div>
-                  <input
-                    type="text"
-                    class="search__input"
-                    placeholder="Type in to Search..."
-                  />
-                </div>
-              </div>
-              <div class="header__logo">
-                <div class="logo"></div>
-              </div>
-              <div class="header__profile profile">
+          </header>
+          <div class="content">
+            <div class="content__header">
+              <div class="content__active-page">
                 <div class="icons">
-                  <a href="#" class="profile__notice-icon"><i class="fas fa-bell"></i></a>
+                  <a href="#" class="sidebar__icon">
+                    <img src="./img/svg/dashboard.svg" alt="" class="img-svg"
+                  /></a>
                 </div>
-                <div class="profile__avatar">
-                  <img src="./img/Avatar.png" alt="" />
+                <div class="sidebar__link"><a href="#">Dashboard</a></div>
+              </div>
+              <div class="content__buttons">
+                <div class="btn">
+                  <button class="button-all btn-r-border">All Leads</button>
                 </div>
-                <div class="profile__name"><a href="#">Micheal Hogan</a></div>
+                <div class="btn">
+                  <button class="button-all btn-l-border">My Leads</button>
+                </div>
+              </div>
+              <div class="btn edit-lead">
+                <button class="button-all btn-all-border">
+                  <i class="fas fa-pen"></i>Add Lead
+                </button>
+              </div>
+            </div>
+            <div class="bets">
+              <div class="bets__item">
+                <div class="bets__heading"><h3>Intial Contact 3 (300$)</h3></div>
+                <div class="diving-line"></div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img3.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Bryce Canyon a stunnin...</span></div>
+                    <div class="person__price"><span>7500$ Google Inc</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img4.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Space the final frontier</span></div>
+                    <div class="person__price"><span>400$ Uber Comp...</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img1.webp" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>What makes a hotel bou...</span></div>
+                    <div class="person__price"><span>350$ Uber Comp...</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img2.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Great Benefits Of Natu...</span></div>
+                    <div class="person__price"><span>200$ Apple Inc</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="icons arrow-right">
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="bets__item">
+                <div class="bets__heading"><h3>Intial Contact 3 (300$)</h3></div>
+                <div class="diving-line"></div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img3.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Bryce Canyon a stunnin...</span></div>
+                    <div class="person__price"><span>7500$ Google Inc</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img4.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Space the final frontier</span></div>
+                    <div class="person__price"><span>400$ Uber Comp...</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="icons arrow-right">
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="bets__item">
+                <div class="bets__heading"><h3>Intial Contact 3 (300$)</h3></div>
+                <div class="diving-line"></div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img3.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Bryce Canyon a stunnin...</span></div>
+                    <div class="person__price"><span>7500$ Google Inc</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="icons arrow-right">
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="bets__item">
+                <div class="bets__heading"><h3>Intial Contact 3 (300$)</h3></div>
+                <div class="diving-line"></div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img4.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Space the final frontier</span></div>
+                    <div class="person__price"><span>400$ Uber Comp...</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="icons arrow-right">
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="bets__item">
+                <div class="bets__heading"><h3>Intial Contact 3 (300$)</h3></div>
+                <div class="diving-line"></div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img4.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Space the final frontier</span></div>
+                    <div class="person__price"><span>400$ Uber Comp...</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
+                <div class="person">
+                  <div class="person__avatar">
+                    <img src="./img/img4.jpg" alt="" />
+                  </div>
+                  <div class="persone__text">
+                    <div class="person__message"><span>Space the final frontier</span></div>
+                    <div class="person__price"><span>400$ Uber Comp...</span></div>
+                  </div>
+                  <div class="icons">
+                    <a href="#" class="history"><i class="fas fa-history"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <main class="main">
-        <div class="main__wrap">
-          <nav class="nav">
-            <div class="nav__item sidebar">
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"
-                    ><img src="./img/svg/dashboard.svg" alt="" class="img-svg"
-                  /></a>
-                </div>
-                <div><a href="#" class="sidebar__link">Dashboard</a></div>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-user-circle"></i></a>
-                </div>
-                <div><a href="#" class="sidebar__link">Deals</a></div>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-star"></i></a>
-                </div>
-                <div><a href="#" class="sidebar__link">Contacts</a></div>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-chart-line"></i></a>
-                </div>
-                <div><a href="#" class="sidebar__link">Stats</a></div>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-cog"></i></a>
-                </div>
-                <div><a href="#" class="sidebar__link">Settings</a></div>
-              </div>
-            </div>
-
-            <div class="nav__item sidebar">
-              <div class="sidebar__head">
-                <a href="#" class="sidebar__heading">Last Leads</a>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-briefcase"></i></a>
-                </div>
-                <div class="sidebar__link">Bryce Canyon a stunnin...</div>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-briefcase"></i></a>
-                </div>
-                <div class="sidebar__link">What makes a hotel bou...</div>
-              </div>
-              <div class="sidebar__btn btn">
-                <button class="button-all">Show More</button>
-              </div>
-            </div>
-
-            <div class="nav__item sidebar">
-              <div class="sidebar__head">
-                <a href="#" class="sidebar__heading">Last Clients</a>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-user-alt"></i></a>
-                </div>
-                <div class="sidebar__link">Leila Estrada</div>
-              </div>
-
-              <div class="sidebar__row">
-                <div class="icons">
-                  <a href="#" class="sidebar__icon"><i class="fas fa-user-alt"></i></a>
-                </div>
-                <div class="sidebar__link">Leila Estrada</div>
-              </div>
-              <div class="sidebar__btn btn">
-                <button class="button-all">Show More</button>
-              </div>
-            </div>
-          </nav>
-          <div class="content"><h1>hello world</h1></div>
-        </div>
       </main>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/497889a7fe.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/497889a7fe.js" crossorigin="anonymous"></script>
     <script src="./js/sctipt.js"></script>
   </body>
 </html>

@@ -11,7 +11,8 @@
   }
 }
 .cross {
-  margin-left: 9.5rem;
+  display: none;
+  transition: ease-in 0.5s;
   &__icon {
     width: 14px;
     height: 14px;
@@ -21,4 +22,8 @@
 .dashboard{
   width: 18px;
   height: 18px;
+}
+.fa-pen{
+  font-size: 1.6rem;
+  margin-right: 2rem;
 }
