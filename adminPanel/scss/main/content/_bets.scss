@@ -1,6 +1,8 @@
 .bets {
   display: flex;
   padding: 3rem;
+  width: 100%;
+  @include border-B;
   &__item {
   }
 
@@ -44,6 +46,10 @@
     display: flex;
     span {
       @include Roboto-M;
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       font-size: 1.2rem;
       line-height: 1.67;
       text-align: left;
@@ -67,14 +73,17 @@
   }
 }
 
-.history {
-  i {
-    color: #f39c13;
+
+@media (max-width: 991.98px) {
+  .bets{
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    &__item{
+      margin: 0 2rem 1rem 0
+    }
   }
-}
-.arrow-right {
-  margin: 2.65rem 1rem 0;
-  a {
-    font-size: 1.6rem;
+  .arrow-right{
+    position: absolute;
+    opacity: 0;
   }
 }

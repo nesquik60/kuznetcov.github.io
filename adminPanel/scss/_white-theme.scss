@@ -1,0 +1,105 @@
+@import './common/mixins.scss';
+* {
+  transition: ease-in 0.2s;
+}
+.active-white {
+  transition: ease-in-out 0.2s;
+}
+.active-white.active {
+  transition: ease-in 0.2s;
+}
+body.active-white {
+  background-color: #fafafa;
+}
+.logo.active-white {
+  border-color: #0078ff;
+}
+.menu.active-white {
+  background-color: #fff;
+  @include border-B-W;
+  &__link.active-white {
+    color: #999;
+  }
+}
+.sidebar-item.active-white {
+  @include border-B-W;
+}
+.header.active-white {
+  background-color: #fff;
+  @include border-L-W;
+}
+.btn-r-border.active-white {
+  border-right: 1.5px solid #f0f0f0;
+}
+.btn-l-border.active-white {
+  border-left: 1px solid #f0f0f0;
+}
+.content.active-white {
+  @include border-L-W;
+  .content__header.active-white {
+    @include border-T-W;
+    @include border-B-W;
+  }
+}
+.bets.active-white {
+  @include border-B-W;
+  &__heading.active-white {
+    h3.active-white {
+      @include whiteThemeGrey;
+    }
+  }
+}
+.button-all.active-white {
+  @include btnBorderAll-W;
+  color: #999999;
+}
+.person.active-white {
+  box-shadow: -0.2px 2px 6px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  .person__message.active-white {
+    span {
+      @include whiteThemeGrey;
+    }
+  }
+  .person__price.active-white {
+    span.active-white {
+      color: #b3b3b3;
+    }
+  }
+}
+.search__input.active-white {
+  color: #999;
+}
+.icons.active-white {
+  a.active-white {
+    @include whiteThemeLightGrey;
+  }
+}
+.sidebar-item__link {
+  a.active-white {
+    @include whiteThemeGrey;
+  }
+}
+.small-block.active-white {
+  box-shadow: -0.2px 2px 6px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  .small-block__value.active-white {
+    @include whiteThemeGrey;
+  }
+  .small-block__title.active-white {
+    color: #b3b3b3;
+  }
+}
+
+.chart-big.active-white {
+  box-shadow: -0.2px 2px 6px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  .chart-big__title.active-white {
+    @include whiteThemeGrey;
+  }
+}
+.circle-diagramm.active-white {
+  &::after {
+    background-color: #ffffff;
+  }
+}

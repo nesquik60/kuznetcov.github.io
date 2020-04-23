@@ -1,6 +1,7 @@
 .header {
   background-color: #31394c;
   height: 100%;
+  @include border-L;
 
   &__wrap {
     display: flex;
@@ -34,4 +35,47 @@
   height: 40px;
   border: solid 8px #ffffff;
   border-radius: 50%;
+}
+
+.change-style {
+  position: absolute;
+  left: 40%;
+  top: 9.5px;
+}
+.dark,
+.white {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transition: ease-in 0.2s;
+  a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1.9rem;
+    color: #fff;
+  }
+}
+
+.dark {
+  transform: scale(0);
+}
+
+.white {
+  transform: scale(1);
+  a {
+    color: #6f7582;
+  }
+}
+.white.active {
+  transform: scale(0);
+}
+.dark.active {
+  transform: scale(1);
+  a {
+    color: #b1b1b1;
+  }
 }

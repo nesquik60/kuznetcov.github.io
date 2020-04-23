@@ -1,23 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 body{
-    background-color: #212734;
+  background-color: #212734;
+
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.wrapper{
-    display: flex;
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 .container {
-    // max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+  // max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }

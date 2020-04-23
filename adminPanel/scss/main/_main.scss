@@ -1,7 +1,11 @@
 .main {
-  &__wrap{
+  display: flex;
+  flex-direction: column;
+  flex: 90%;
+
+  &__wrap {
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
   }
 }

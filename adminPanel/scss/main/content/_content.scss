@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  flex: 81.25%;
+  width: 100%;
   color: #fff;
+  @include border-L;
   &__header {
     @include border-T;
+    @include border-B;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex: 100%;
-    padding: 2.5rem 6rem 2.5rem 3rem;
+    padding: 2.2rem 6rem 2.2rem 3rem;
   }
   &__active-page {
     display: flex;
@@ -27,4 +29,11 @@
   display: flex;
   justify-content: flex-end;
   flex: calc(100% / 3);
+}
+@media (max-width: 991.98px) {
+  .content{
+    &__header{
+      padding-right: 3rem;
+    }
+  }
 }

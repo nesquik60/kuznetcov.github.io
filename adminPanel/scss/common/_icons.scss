@@ -18,12 +18,22 @@
     height: 14px;
   }
 }
-
-.dashboard{
+.dashboard {
   width: 18px;
   height: 18px;
 }
-.fa-pen{
+.fa-pen {
   font-size: 1.6rem;
   margin-right: 2rem;
+}
+.history {
+  i {
+    color: #f39c13;
+  }
+}
+.arrow-right {
+  margin: 2.65rem 1rem 0;
+  a {
+    font-size: 1.6rem;
+  }
 }

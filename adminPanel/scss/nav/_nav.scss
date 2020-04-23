@@ -2,5 +2,13 @@
   display: flex;
   flex-direction: column;
   flex: 18.75%;
-  height: 100%;
+  max-width: 350px;
+  min-height: 100%;
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .nav {
+    flex: 10%;
+    max-width: auto;
+  }
 }
