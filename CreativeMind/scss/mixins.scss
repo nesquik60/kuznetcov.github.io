@@ -1,0 +1,21 @@
+@mixin whiteLight {
+  color: #fff;
+  opacity: 0.85;
+}
+
+@mixin Runda-B {
+  font-family: 'Runda-Bold';
+}
+@mixin Runda-M {
+  font-family: 'Runda-Medium';
+}
+@mixin Runda {
+  font-family: 'Runda-Normal';
+}
+@mixin Runda-L {
+  font-family: 'Runda-light';
+}
+
+@mixin QuestFonts {
+  font-family: 'Questrial', sans-serif;
+}
