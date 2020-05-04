@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
   source: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'dist'),
+  build: path.join(__dirname, 'build'),
 };
 
 module.exports = {
