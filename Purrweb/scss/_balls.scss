@@ -1,0 +1,202 @@
+.flying-balls {
+  background: url('/img/bg-balls.png') #81398b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13.4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.balls-btn-border {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 462px;
+  height: 462px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.balls-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 371px;
+  height: 371px;
+
+  span {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #67326e;
+    font-size: 4.6rem;
+  }
+  &__heading {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: -0.5rem;
+  }
+  &__gradient {
+    margin-top: 1.8rem;
+  }
+}
+.btn-gradient {
+  border: none;
+  border-radius: 3px;
+  background-image: linear-gradient(to top, #f9b416, #e22028);
+  padding: 1.4rem 2.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(to top, #f3bd3f, #db3e43);
+  }
+}
+.balls {
+  position: absolute;
+}
+#balls-1 {
+  left: -5%;
+  top: 20%;
+}
+#balls-2 {
+  left: 9%;
+  top: 50%;
+}
+#balls-3 {
+  top: 6%;
+  left: 15%;
+}
+#balls-4 {
+  top: 60%;
+  left: 22%;
+}
+#balls-5 {
+  top: 62%;
+  right: 25%;
+}
+#balls-6 {
+  top: 3%;
+  right: 20%;
+}
+#balls-7 {
+  top: 47%;
+  right: 3%;
+}
+#balls-8 {
+  top: 5%;
+  right: -4%;
+}
+@media (max-width: 1440px) {
+  .balls {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1365px) {
+  #balls-1 {
+    left: -10%;
+    top: 20%;
+  }
+  #balls-2 {
+    left: 3%;
+    top: 50%;
+  }
+  #balls-3 {
+    top: 3%;
+    left: 5%;
+  }
+  #balls-4 {
+    top: 60%;
+    left: 10%;
+  }
+  #balls-5 {
+    top: 80%;
+    right: 15%;
+  }
+  #balls-6 {
+    top: 10%;
+    right: 10%;
+  }
+  #balls-7 {
+    top: 40%;
+    right: 1%;
+  }
+  #balls-8 {
+    top: 5%;
+    right: -4%;
+  }
+}
+@media (max-width: 999px) {
+  .balls {
+    transform: scale(0.5);
+  }
+  #balls-1 {
+    left: -10%;
+    top: 20%;
+  }
+  #balls-2 {
+    left: 8%;
+    top: 35%;
+  }
+  #balls-3 {
+    top: -10%;
+    left: 0%;
+  }
+  #balls-4 {
+    top: 60%;
+    left: 5%;
+  }
+  #balls-5 {
+    top: 75%;
+    right: 8%;
+  }
+  #balls-6 {
+    top: -3%;
+    right: 5%;
+  }
+  #balls-7 {
+    top: 40%;
+    right: -4%;
+  }
+  #balls-8 {
+    top: 5%;
+    right: -4%;
+  }
+  .flying-balls {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .balls {
+    display: none;
+  }
+  .balls-btn-border {
+    width: 362px;
+    height: 362px;
+  }
+  .balls-btn {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .balls-btn-border {
+    width: 312px;
+    height: 312px;
+  }
+  .balls-btn {
+    width: 260px;
+    height: 260px;
+    span {
+      font-size: 3.6rem;
+    }
+  }
+  .btn-gradient {
+    padding: 1.2rem 2.4rem;
+  }
+}

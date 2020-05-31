@@ -1,0 +1,52 @@
+mixin checkbox(text)
+    label(class="check")
+        input(type="checkbox" class="check__input")
+        span(class="check__box") 
+        span(class="check__text")=text
+mixin radio(text)
+    label(class="check")
+        input(class="check__input" type="checkbox")
+        span(class="check__radio") 
+        span(class="check__text")=text
+mixin toggle(text)
+    label(class="check")
+        input(type="checkbox" class="check__input")
+        span(class="check__toggle") 
+        span(class="check__text")=text
+mixin like(text)
+    button(class="like-btn")
+        <i class="zmdi zmdi-favorite-outline like-btn__icon fav-empty"></i>
+        <i class="zmdi zmdi-favorite like-btn__icon fav-filled"></i>
+        span(class="like-btn__text")=text
+mixin rating-star(name)
+    fieldset(class="rating")
+        .rating__group
+            input(class="rating__star" name=name type="radio" value="1")
+            input(class="rating__star" name=name type="radio" value="3")
+            input(class="rating__star" name=name type="radio" value="2")
+            input(class="rating__star" name=name type="radio" value="4")
+            input(class="rating__star" name=name type="radio" value="5")
+            .rating__focus
+.checkbox-set
+    .checkbox-group
+        +headingField('Checkbox buttons')
+        +checkbox('Можно курить')
+        +checkbox('Можно с питомцами')
+        +checkbox('Можно пригласить гостей (до 10 человек)')
+    .radio-group
+        +headingField('Radio buttons')
+        +radio('Мужчина')
+        +radio('Женщина')
+    .toggle-group
+        +headingField('Toggle')
+        +toggle('Получать спецпредложения')
+        +toggle('Получать спецпредложения')
+    .like-group
+        +headingField('Like button')
+        +like('12')
+        +like('3')
+    .rate-group
+        +headingField('Rate button')
+        +rating-star('rating-one')
+        +rating-star('rating-two')
+

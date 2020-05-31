@@ -1,0 +1,31 @@
+mixin textlink(text)
+    span(class="text-link")=text
+mixin btn-fill(text)
+    button(class="button buttton-fill")
+        span(class="text-link")=text
+mixin btn-empty(text)
+    button(class="button button-empty")
+        span(class="text-link")=text
+mixin btn-icon(text)
+    button(class="button-icon")=text
+        <i class="button-icon__arrow zmdi zmdi-arrow-right"></i>
+
+
+.button-set
+    .slider-main
+        +headingField('Range Slider')
+        span(id="slider-non-linear-step-value" class="slider-value")
+        div(id="slider-non-linear-step" class="slider")
+
+    +headingField('Buttons')
+    .btn-group
+        +btn-fill('Click me')
+        +btn-fill('Click me')
+        +btn-empty('Click me')
+        +btn-empty('Click me')
+    .btn-text
+        +textlink('Click me')
+        +textlink('Click me')
+    +btn-icon('Перейти к оплате')
+    <div id="data-container"></div>
+<div id="pagination-container"></div>

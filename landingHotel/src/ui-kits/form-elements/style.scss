@@ -1,0 +1,21 @@
+@import '../common/_mixin.scss';
+@import '../common/_fonts';
+@import '../form-elements/field-set/_field-set';
+@import '../form-elements/checkbox-set/checkbox-set';
+@import '../form-elements/button-set/button-set';
+@import '../form-elements/button-set/nouislider.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding: 14rem 14.1rem;
+}

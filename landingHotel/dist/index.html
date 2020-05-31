@@ -1,0 +1,174 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/air-datepicker/dist/css/datepicker.min.css" />
+    <script src="/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+    <link rel="stylesheet" href="../FA/css/all.css" />
+    <link href="main.css" rel="stylesheet" /></head
+  ><title>Form Elements</title>
+  <body>
+    <div class="wrapper">
+      <div class="field-set">
+        <div class="text-inputs">
+          <div class="heading-field"><h3>Text Field</h3></div>
+          <div class="entry-field input-text">
+            <input class="entry-field__input" placeholder="Email" />
+          </div>
+          <div class="heading-field"><h3>Text Field</h3></div>
+          <div class="entry-field input-text">
+            <input class="entry-field__input" placeholder="Name" />
+          </div>
+          <div class="input-witch-icon">
+            <div class="heading-field"><h3>Dropdown</h3></div>
+            <div class="entry-field input-text">
+              <input
+                class="entry-field__input"
+                placeholder="Сколько гостей"
+                readonly="readonly"
+              />
+            </div>
+            <i class="fas fa-chevron-down input-witch-icon__chivron"></i>
+            <div class="dropdown">
+              <div class="dropdown__item">
+                <div class="dropdown__name"><span>Взрослые</span></div>
+                <div class="dropdown__controls">
+                  <img class="minus" src="/img/svg/minus.svg" alt="" />
+                  <input class="dropdown__numbers" value="0" /><img
+                    class="plus"
+                    src="/img/svg/plus.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="dropdown__item">
+                <div class="dropdown__name"><span>Дети</span></div>
+                <div class="dropdown__controls">
+                  <img class="minus" src="/img/svg/minus.svg" alt="" />
+                  <input class="dropdown__numbers" value="0" /><img
+                    class="plus"
+                    src="/img/svg/plus.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="dropdown__item">
+                <div class="dropdown__name"><span>Животина</span></div>
+                <div class="dropdown__controls">
+                  <img class="minus" src="/img/svg/minus.svg" alt="" />
+                  <input class="dropdown__numbers" value="0" /><img
+                    class="plus"
+                    src="/img/svg/plus.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a class="apply-dropdown" href="#">Применить</a>
+            </div>
+          </div>
+          <div class="input-date-inner">
+            <div class="input-witch-icon">
+              <div class="heading-field"><h3>Masked text field</h3></div>
+              <div class="entry-field input-date">
+                <input
+                  class="entry-field__input date datepicker-here"
+                  placeholder="ДД.ММ.ГГГГ"
+                /><i class="fas fa-chevron-down input-witch-icon__chivron"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="select-date-dropdown">
+          <div class="input-date-inner">
+            <div class="input-witch-icon">
+              <div class="heading-field"><h3>Date Dropdown</h3></div>
+              <div class="entry-field input-date">
+                <input
+                  class="entry-field__input date datepicker-here"
+                  placeholder="ДД.ММ.ГГГГ"
+                /><i class="fas fa-chevron-down input-witch-icon__chivron"></i>
+              </div>
+            </div>
+          </div>
+          <div class="input-date-inner">
+            <div class="input-witch-icon">
+              <div class="heading-field"><h3>Date Dropdown</h3></div>
+              <div class="entry-field input-date">
+                <input
+                  class="entry-field__input date datepicker-here"
+                  placeholder="ДД.ММ.ГГГГ"
+                /><i class="fas fa-chevron-down input-witch-icon__chivron"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="short-blocks">
+          <div class="input-date-inner">
+            <div class="input-witch-icon">
+              <div class="heading-field"><h3>Filter date dropdown</h3></div>
+              <div class="entry-field input-date">
+                <input
+                  class="entry-field__input date datepicker-here"
+                  placeholder="ДД.ММ.ГГГГ"
+                /><i class="fas fa-chevron-down input-witch-icon__chivron"></i>
+              </div>
+            </div>
+          </div>
+          <div class="input-witch-icon">
+            <div class="heading-field"><h3>Subscription text field</h3></div>
+            <div class="entry-field input-text">
+              <input class="entry-field__input" placeholder="Email" />
+            </div>
+            <i class="fas fa-arrow-right input-witch-icon__arrow"></i>
+          </div>
+        </div>
+      </div>
+      <div class="checkbox-set">
+        <div class="checkbox-group">
+          <div class="heading-field"><h3>Checkbox buttons</h3></div>
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__box"></span
+            ><span class="check__text">Можно курить</span></label
+          >
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__box"></span
+            ><span class="check__text">Можно с питомцами</span></label
+          >
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__box"></span
+            ><span class="check__text">Можно пригласить гостей (до 10 человек)</span></label
+          >
+        </div>
+        <div class="radio-group">
+          <div class="heading-field"><h3>Radio buttons</h3></div>
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__radio"></span
+            ><span class="check__text">Мужчина</span></label
+          >
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__radio"></span
+            ><span class="check__text">Женщина</span></label
+          >
+        </div>
+        <div class="toggle-group">
+          <div class="heading-field"><h3>Toggle</h3></div>
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__toggle"></span
+            ><span class="check__text">Получать спецпредложения</span></label
+          >
+          <label class="check"
+            ><input class="check__input" type="checkbox" /><span class="check__toggle"></span
+            ><span class="check__text">Получать спецпредложения</span></label
+          >
+        </div>
+      </div>
+      <div class="button-set">
+        <div class="heading-field"><h3>hello</h3></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

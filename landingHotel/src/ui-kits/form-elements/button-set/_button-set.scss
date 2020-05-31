@@ -1,0 +1,103 @@
+.button-set {
+}
+.btn-group {
+  display: grid;
+  grid-template-columns: repeat(2, 109px);
+  grid-gap: 3rem;
+  margin-bottom: 3rem;
+}
+.btn-text {
+  display: grid;
+  grid-template-columns: repeat(2, 90px);
+  margin-bottom: 3rem;
+}
+.button {
+  width: 99px;
+  height: 44px;
+  border: none;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.1s linear;
+
+  margin-right: 2rem;
+  span {
+    color: #fff;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.text-link {
+  @include Monts-B;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: $DS50;
+
+  cursor: pointer;
+  &:hover {
+    color: $purple;
+  }
+}
+.button-empty {
+  background: none;
+  border: 2px solid $purple;
+  color: $purple;
+  .text-link {
+    color: $purple;
+  }
+}
+.button-icon {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+  position: relative;
+
+  @include Monts-B;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 2.4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.slider-main {
+  margin-bottom: 4rem;
+  position: relative;
+  width: 266px;
+}
+.slider-value {
+  position: absolute;
+  right: 0;
+  top: 0;
+  @include Monts;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  color: $DS50;
+}
+.slider {
+  margin-top: 2rem;
+}

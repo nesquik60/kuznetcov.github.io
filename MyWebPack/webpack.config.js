@@ -1,51 +1,42 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    app: './src/index.js',
-  },
-
+  entry: './src/index.js',
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist',
+    filename: 'js/[name].js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: '/node_modules/',
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        options: {
+          pretty: true,
+        },
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: { sourceMap: true },
-          },
-          {
-            loader: 'sass-loader',
-            options: { sourceMap: true },
-          },
-        ],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        }),
       },
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
+    new HtmlWebpackPlugin({
+      template: './src/pages/index.pug',
     }),
+    new ExtractTextPlugin({ filename: './css/[name].css' }),
   ],
-  devServer: {
-    stats: 'errors-only',
-    overlay: true,
-  },
 };

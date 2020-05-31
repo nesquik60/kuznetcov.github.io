@@ -1,0 +1,85 @@
+mixin headingField(value)
+    .heading-field
+        h3= value
+
+mixin input-text(placeholder)
+    div(class="entry-field input-text")
+        input(type='text' class='entry-field__input'
+        placeholder=placeholder)
+
+mixin input-dropdown(placeholder)
+    div(class="entry-field input-text")
+            input(type='text' class='entry-field__input'
+            placeholder=placeholder readonly)
+
+mixin input-date(classname, placeholder)
+    div(class="entry-field input-date")
+        input(type='text' class='entry-field__input date ' +classname
+        placeholder=placeholder)
+
+mixin input-date-icon(heading, classname, placeholder)
+    .input-date-inner
+        .input-witch-icon
+            +headingField(heading)
+            div(class="entry-field input-date")
+                input(type='text' class='entry-field__input date ' +classname
+                placeholder=placeholder)
+                i(class="fas fa-chevron-down input-witch-icon__chivron")
+
+mixin apply-button
+    a(href="#" class="apply-dropdown") Применить 
+
+mixin dropdown__item(name, number)
+    .dropdown__item
+        .dropdown__name
+            span=name 
+        .dropdown__controls
+            img(src="/img/svg/minus.svg" alt="" class="minus")
+            input(type="text" class='dropdown__numbers' value=number)
+            img(src="/img/svg/plus.svg" alt="" class="plus")
+
+
+
+
+.field-set
+    .text-inputs
+        +headingField('Text Field')
+        +input-text('Email')
+        +headingField('Text Field')
+        +input-text('Name')
+        .input-witch-icon
+            +headingField('Dropdown')
+            +input-dropdown('Сколько гостей')
+            i(class="fas fa-chevron-down input-witch-icon__chivron")
+            .dropdown
+                +dropdown__item('Взрослые', '0')
+                +dropdown__item('Дети', '0')
+                +dropdown__item('Животина', '0')
+                +apply-button
+        +input-date-icon(
+            'Masked text field',
+            'datepicker-here',
+            'ДД.ММ.ГГГГ'
+        )
+    .select-date-dropdown
+        +input-date-icon(
+            'Date Dropdown', 
+            'datepicker-here', 
+            'ДД.ММ.ГГГГ'
+        )
+        +input-date-icon(
+            'Date Dropdown', 
+            'datepicker-here', 
+            'ДД.ММ.ГГГГ'
+        )
+
+    .short-blocks
+        +input-date-icon(
+            'Filter date dropdown',
+            'datepicker-here',
+            'ДД.ММ.ГГГГ'
+        )
+        .input-witch-icon
+            +headingField('Subscription text field')
+            +input-text('Email')
+            i(class="fas fa-arrow-right input-witch-icon__arrow")
