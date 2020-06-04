@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +40,36 @@ body {
   background: steelblue;
   position: relative;
   transition: ease-in-out 0.2s;
+  &:nth-child(1) {
+    background-color: steelblue;
+  }
+  &:nth-child(2) {
+    background-color: tomato;
+  }
+  &:nth-child(3) {
+    background-color: yellowgreen;
+  }
+  &:nth-child(4) {
+    background-color: turquoise;
+  }
+  &:nth-child(5) {
+    background-color: teal;
+  }
+  &:nth-child(6) {
+    background-color: lightsteelblue;
+  }
+  &:nth-child(7) {
+    background-color: skyblue;
+  }
+  &:nth-child(8) {
+    background-color: rebeccapurple;
+  }
+  &:nth-child(9) {
+    background-color: plum;
+  }
+  &:nth-child(10) {
+    background-color: mediumaquamarine;
+  }
   a {
     position: absolute;
     display: flex;
@@ -49,8 +79,10 @@ body {
     letter-spacing: 1px;
     font-size: 2em;
     text-decoration: none;
+    text-transform: uppercase;
     width: 100%;
     height: 100%;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.8);
   }
   &:active {
     opacity: 0.7;
@@ -72,9 +104,11 @@ body {
   min-height: 300px;
   height: 100%;
 }
-.big {
-  width: 400px;
-  height: 250px;
+.no-absol {
+  padding: 0.5em;
+  a {
+    position: relative;
+  }
 }
 .text-block {
   display: flex;
@@ -82,16 +116,17 @@ body {
   background: rgb(52, 48, 61);
   padding: 2em;
   border-radius: 10px;
+  font-weight: 500;
   width: 70%;
   color: #fff;
-  font-family: 'Lato', sans-serif;
-  
+  font-size: 1.5em;
+  font-family: sans-serif;
+
 }
 @media (max-width: 1100px) {
   .text-block {
-    width: 85%;
+    width: 90%;
     margin-top: 2em;
-
   }
 }
 h1 {
