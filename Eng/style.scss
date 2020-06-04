@@ -129,6 +129,11 @@ body {
     margin-top: 2em;
   }
 }
+@media (max-width: 560px) {
+  .text-block {
+    font-size: 1.1em;
+  }
+}
 h1 {
   margin-bottom: 20px;
   font-size: 2.5em;
