@@ -1,0 +1,38 @@
+mixin menu__item(name,className)
+    .menu__item
+        a(href="" class="menu__item-text")=name
+        block
+nav.menu
+    +menu__item('О компании')
+        .dropdown
+            a(href="#" class="dropdown__item") О компании
+            a(href="#" class="dropdown__item") Оборудование
+            a(href="#" class="dropdown__item") Материалы
+            a(href="#" class="dropdown__item") Документы
+            a(href="#" class="dropdown__item") Реквезиты
+            a(href="#" class="dropdown__item") Вакансии
+        <i class="fas fa-chevron-down"></i>
+    +menu__item('Специалисты')
+    +menu__item('Услуги')
+        .dropdown
+            a(href="#" class="dropdown__item") Диагностика
+            a(href="#" class="dropdown__item") Профилактика
+            a(href="#" class="dropdown__item") Эстетика зубов
+            a(href="#" class="dropdown__item") Лечение
+            a(href="#" class="dropdown__item") Протезирование
+            a(href="#" class="dropdown__item") Имплантация
+        <i class="fas fa-chevron-down"></i>
+    +menu__item('Цены')
+        .dropdown
+            a(href="#" class="dropdown__item") Стоймость лечения
+            a(href="#" class="dropdown__item") Дисконтная программа
+        <i class="fas fa-chevron-down"></i>
+    +menu__item('Портфолио')
+        .dropdown
+        <i class="fas fa-chevron-down"></i>
+    +menu__item('Пациентам')
+    +menu__item('Отзывы')
+    +menu__item('Контакты')
+    .menu__item
+        a(href="" class="menu__item-text")
+            <i class="fas fa-search"></i>

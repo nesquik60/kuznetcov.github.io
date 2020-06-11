@@ -1,0 +1,39 @@
+.low-vision-version {
+  background-color: #f3f6f9;
+  padding: 1rem 0;
+  display: flex;
+  &__inner {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+  }
+  &__eye {
+    display: flex;
+    align-items: center;
+    a {
+      @include M500;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $dark-text;
+      margin-left: 1.1rem;
+    }
+  }
+}
+.social {
+  display: flex;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aec0d4;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    &:nth-child(1){
+      margin-left: 0;
+    }
+  }
+}

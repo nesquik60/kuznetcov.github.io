@@ -1,0 +1,45 @@
+mixin profile(path,name,post)
+    .profile
+        img(src=path alt="" class="profile__img")
+        .profile__text
+            span(class="profile__name")= name
+            a(href="#" class="profile__post")= post
+.section-profile
+    .container
+        .section-profile__title
+            h2(class="middle-title") Наши специалисты
+            .slider-control
+                .slider-control__counters
+                    span(class="slider-control__counter") 4
+                    span  / 
+                    span(class="slider-control__counter") 7
+                .slider-control__items
+                    .slider-control__item
+                        <i class="fas fa-chevron-left"></i>
+                    .slider-control__item
+                        <i class="fas fa-chevron-right"></i>
+        .slider-profile
+            .profile
+                img(src="./img/profile1.jpg" alt="" class="profile__img")
+                .profile__text
+                    span(class="profile__name") Кондрашова<br>Марина Леонидовна
+                    a(href="#" class="profile__post") Главный врач
+            .profile
+                img(src="./img/profile2.jpg" alt="" class="profile__img")
+                .profile__text
+                    span(class="profile__name") Куцын<br>Сергей Николаевич
+                    a(href="#" class="profile__post") Хирург-имплантолог, стоматолог-ортопед
+            .profile
+                img(src="./img/profile3.jpg" alt="" class="profile__img")
+                .profile__text
+                    span(class="profile__name") Мирзоян<br>Гурген Владимирович
+                    a(href="#" class="profile__post") Врач - стоматолог
+            .profile
+                img(src="./img/profile4.jpg" alt="" class="profile__img")
+                .profile__text
+                    span(class="profile__name") Головина<br>Евгения Игоревна
+                    a(href="#" class="profile__post") Врач - стоматолог
+    button(class="border-btn") смотреть всех врачей
+
+
+

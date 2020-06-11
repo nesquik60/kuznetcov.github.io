@@ -1,0 +1,51 @@
+.section-card {
+  background: #d6ebff;
+  padding: 8rem 0;
+  display: grid;
+  @media (max-width: 768px) {
+    padding: 5rem 0;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin-top: 4rem;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    display: flex;
+    background: #fff;
+    padding: 4rem 4rem 4rem 2.5rem;
+    @media (max-width: 380px) {
+      padding: 2rem;
+    }
+    @media (max-width: 320px) {
+      flex-direction: column;
+    }
+    span {
+      opacity: 0.8;
+      @include M900;
+      font-size: 4.5rem;
+      color: $sky-blue;
+      height: 100%;
+      float: left;
+    }
+    h3 {
+    }
+    p {
+      @include M300;
+      font-size: 1.6rem;
+      line-height: 1.75;
+      text-align: left;
+      color: $dark-text;
+    }
+  }
+  &__item-text {
+    margin-left: 2rem;
+    @media (max-width: 320px) {
+      margin: 0;
+    }
+  }
+}
