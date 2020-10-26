@@ -1,0 +1,12 @@
+.event-gallery {
+  &__items {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 17px 18px;
+    i {
+      opacity: 0.7;
+      color: #2cc7c1;
+      margin-right: 5px;
+    }
+  }
+}

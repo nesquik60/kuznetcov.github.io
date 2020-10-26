@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../fonts/Ubuntu-R.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../fonts/Ubuntu-B.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("../fonts/Ubuntu-M.ttf");
+  font-display: swap;
+}
+@mixin Monts {
+  font-family: "Montserrat-Bold";
+}
+@mixin Monts-B {
+  font-family: "Montserrat-Regular";
+}
+@mixin Ubuntu {
+  font-family: "Ubuntu-Regular";
+}
+@mixin Ubuntu-B {
+  font-family: "Ubuntu-Bold";
+}
+@mixin Ubuntu-M {
+  font-family: "Ubuntu-Medium";
+}

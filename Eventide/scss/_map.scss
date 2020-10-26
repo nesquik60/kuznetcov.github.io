@@ -1,0 +1,60 @@
+.map {
+  display: flex;
+  position: relative;
+  &__item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .map {
+    &__address-for-map {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      border-radius: 4px;
+      background-color: #ffffff;
+      max-width: 325px;
+      padding: 20px 10px 13px 20px;
+    }
+  }
+}
+.address-name,
+.address-text {
+  font-size: 17px;
+  line-height: 1.47;
+  letter-spacing: 0.17px;
+  text-align: left;
+  color: #525b64;
+}
+.address-name {
+  @include Ubuntu-B;
+}
+.address-text {
+  @include Ubuntu;
+}
+.address-link {
+  display: block;
+  float: right;
+  margin-top: 26px;
+}
+
+.location-map {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  .fas {
+    font-size: 3em;
+    color: #f8504d;
+  }
+}
+@media (max-width: 480px) {
+  .map{
+    display: none;
+  }
+}
